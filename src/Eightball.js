@@ -35,7 +35,7 @@ const Eightball = () => {
   };
   const restart = () => {
     setText("Think of a Question");
-    setColor("btn-start")
+    setColor("black");
   };
 
   const [text, setText] = useState("Think of a Question");
@@ -43,7 +43,7 @@ const Eightball = () => {
 
   return (
     <div>
-      <button className='button' style={{backgroundColor: color}} onClick={newText}>
+      <button className='ball' style={{backgroundColor: color}} onClick={newText}>
         {text}
       </button>
       <button style={{marginLeft: '5px'}} onClick={restart}>
